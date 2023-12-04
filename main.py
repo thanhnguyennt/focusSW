@@ -10,6 +10,7 @@ from welcome import init_assistance, speak, get_time, welcome
 from pygame import mixer
 import os
 import webbrowser
+from PIL import Image, ImageTk
 
 #start virtual assistance
 assistance = init_assistance()
@@ -183,9 +184,20 @@ def weather():
     app1=Toplevel()
     app1.geometry('1000x500+300+200')
     app1.title('Weather app')
-    app1.configure(bg='#f4f5f5')
     app1.resizable(False, False)
     
+    img = Image.open("Image/weather_bg.png") 
+    img = img.resize((1000, 500), Image.ANTIALIAS)
+    img = ImageTk.PhotoImage(img)
+
+    # Đặt hình ảnh làm nền cho cửa sổ
+    background_label = Label(app1, image=img)
+    background_label.place(x=0, y=0, relwidth=1, relheight=1)
+    
+    bottom = tk.PhotoImage(file="Image/bottom.png")
+    frame = tk.Label(app1, image=bottom)
+    frame.place(x=1, y=370) 
+
     app1_interface = WeatherAppGUI(app1)
     
     def exit():

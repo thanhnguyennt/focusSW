@@ -36,7 +36,7 @@ class WeatherAppGUI:
         SaveNotesGUI(self.master, self.textfield.get())
 
     def setup_gui(self):
-        # Search box and icon
+        # Search icon
 
         self.textfield = tk.Entry(self.master, justify="center", width=17, font=("poppins", 25, "bold"),
                                   bg="#404040", border=0, fg="white")
@@ -52,6 +52,7 @@ class WeatherAppGUI:
         self.microphone_button = Button(self.master, image=microphone_icon, borderwidth=0, cursor="hand2", bg="#404040", command=self.activate_microphone)
         self.microphone_button.image = microphone_icon
         self.microphone_button.place(x=460, y=46)
+    
 
         # Labels for weather information
         label1 = tk.Label(self.master, text="WIND", font=("Helvetica", 15, 'bold'), fg='green')
