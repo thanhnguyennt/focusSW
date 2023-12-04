@@ -11,6 +11,8 @@ FocusSW is a desktop application that provides a set of utility features for a u
 - **Battery Status:** Real-time display of battery percentage, plug status, and estimated time remaining.
 
 - **Weather App:** Access accurate and up-to-date weather information for a specified location.
+The APIs used for this project:
+https://openweathermap.org/api - weather data
 
 - **Clock:** Display a digital clock with hours, minutes, seconds, and AM/PM.
 

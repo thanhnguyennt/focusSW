@@ -319,7 +319,7 @@ def music():
         music.config(text=music_name[0:4])
         
     #icon
-    image_icon = PhotoImage(file="Image/logo.png")
+    image_icon = PhotoImage(file="Image/logo1.png")
     app8.iconphoto(False,image_icon)
 
     Top = PhotoImage(file="Image/top.png")
@@ -417,12 +417,12 @@ def interest():
     app9.mainloop()
     
     
-def stock_predict():
+def currency_converter():
     def open_streamlit_app():
-        subprocess.Popen(['streamlit', 'run','stock-predict.py'])
+        subprocess.Popen(['streamlit', 'run','currency-converter.py'])
     app10 = Toplevel()
-    app10.title("Stock prediction")
-    start_button = tk.Button(app10, text="Start Stock Prediction App", command=open_streamlit_app)
+    app10.title("Currency Converter")
+    start_button = tk.Button(app10, text="Start Currency Converter App", command=open_streamlit_app)
     start_button.pack()
 
     app10.mainloop()
@@ -471,8 +471,7 @@ app9=Button(RHB,image=app9_image,bd=0, command=interest)
 app9.place(x=390, y=145)
 
 app10_image=PhotoImage(file="Image/App10.png").subsample(4, 4)
-app10=Button(RHB,image=app10_image,bd=0,command=stock_predict)
+app10=Button(RHB,image=app10_image,bd=0,command=currency_converter)
 app10.place(x=390, y=63)
-
 
 root.mainloop()
