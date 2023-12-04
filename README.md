@@ -28,7 +28,7 @@ https://openweathermap.org/api - weather data
 
 - **Interest Calculator:** Calculate simple interest based on principal, rate, and time.
 
-- **Stock Prediction:** Start a Streamlit app for stock prediction.
+- **Currency Converter:** Start a Currency converter app for any currency.
 
 ## Usage
 
@@ -49,9 +49,6 @@ https://openweathermap.org/api - weather data
 - Tkcalendar
 - PyAutoGUI
 - Streamlit
-- Yfinance
-- Prophet
-- Plotly
 
 ## Note
 
