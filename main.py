@@ -1,23 +1,16 @@
 from tkinter import *
-from tkinter import ttk
-from tkinter import ttk, messagebox
 import tkinter as tk
 from tkinter import filedialog
 import platform 
 import psutil
 from weather_gui import WeatherAppGUI
-from welcome import init_assistance, speak, get_time, welcome
+from welcome import init_assistance, get_time, welcome
 from pygame import mixer
 import os
-import webbrowser
 from PIL import Image, ImageTk
 
 #start virtual assistance
 assistance = init_assistance()
-
-#brightness
-import screen_brightness_control as pct
-
 
 #clock
 from time import strftime
@@ -53,7 +46,7 @@ LHS=Frame(Body, width=310, height=435, bg="#f4f5f5", highlightbackground = "#ada
 LHS.place(x=10, y=10)
 
 #logo
-photo=PhotoImage(file="Image/laptop.png").subsample(1, 1)
+photo=PhotoImage(file="Image/laptop.png")
 myimage=Label(LHS, image=photo, background="#f4f5f5")
 myimage.place(x=10, y=20)
 
@@ -99,7 +92,7 @@ def none():
     lbl.config(text=f'{percent}%')
     lbl_plug.config(text=f'Plug in: {str(battery.power_plugged)}')
     
-    if battery_label is None:
+    if battery_label is None:   #nếu là None tức là chưa được khởi tạo
         battery_label = Label(RHS, background="#f4f5f5")
         battery_label.place(x=15, y=50)
 
@@ -326,7 +319,7 @@ def music():
     Label(app8, image= Top, bg="#0f1a2b").pack()
 
     #logo
-    Logo=PhotoImage (file="Image/logo.png")
+    Logo=PhotoImage (file="Image/logo1.png")
     Label(app8, image=Logo, bg="#0f1a2b"). place (x=65,y=115)
 
     #button

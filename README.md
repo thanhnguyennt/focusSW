@@ -55,7 +55,7 @@ https://openweathermap.org/api - weather data
 ### Music Player Usage:
 - The Music Player feature allows users to play MP3 files from a designated folder. Therefore, to use this feature, users need to open folders which include mp3 files. 
 - Please download this Music Folder if there is no available music folder in your laptop: 
-https://drive.google.com/drive/folders/1P83d8Dvuijo2qjk8CMSFXTXhzt1Mfh_G?usp=share_link
+https://drive.google.com/drive/folders/1pCtTaILqJBytC_Ke9MGVpcw-HjMTUaId?usp=sharing
 
 ## Authors
 
